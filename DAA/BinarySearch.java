@@ -17,47 +17,45 @@ public class BinarySearch {
     private static void searchOp(int[] arr, int length, int ele) {
         // function/method to perform a Binary Search operation
         // arr[] is the input array
-        // ele is the element to be found using Binary Search 
+        // ele is the element to be found using Binary Search
 
-        int low=0; 
+        int low = 0;
         // low is the lowest index of the array
 
-        int high=length-1; 
+        int high = length - 1;
         // high is highest index of the array
 
-        int mid=(low+high)/2; 
+        int mid = (low + high) / 2;
         // mid is the index of the element in the middle of the array
 
-        while(low<=high) { //array has one or more than one element
-            if(arr[mid]<ele) {
+        while (low <= high) { // array has one or more than one element
+            if (arr[mid] < ele) {
                 low = mid + 1;
-            }
-            else if(arr[mid]==ele) {
-                System.out.println("The element "+ele+" was found at the index "+mid);
+            } else if (arr[mid] == ele) {
+                System.out.println("The element " + ele + " was found at the index " + mid);
                 break;
-            }    
-            else { //arr[mid]>ele
+            } else { // arr[mid]>ele
                 high = mid - 1;
             }
-            mid = low + high /2;
+            mid = low + high / 2;
         }
 
-        if(low>high) {
-            System.out.println("The element "+ele+" was not found. Possible invalid input.");
-        } 
+        if (low > high) {
+            System.out.println("The element " + ele + " was not found. Possible invalid input.");
+        }
     }
 
     public static void main(String[] args) {
-        
+
         Scanner scan = new Scanner(System.in);
-        
+
         System.out.println("\nEnter the size of the array to be inputted:");
         int size = scan.nextInt();
 
         System.out.println("Enter the elements of the array:");
-        int[] array = new int [size]; 
-        for(int ind=0; ind<size; ind++) {
-            array[ind] = scan.nextInt();  
+        int[] array = new int[size];
+        for (int ind = 0; ind < size; ind++) {
+            array[ind] = scan.nextInt();
         }
 
         System.out.println("The array you inputted is:");

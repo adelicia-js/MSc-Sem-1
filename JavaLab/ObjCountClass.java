@@ -12,12 +12,12 @@ package JavaLab;
 
 public final class ObjCountClass {
 
-    String name="urmom"; // Employee Name
+    String name = "urmom"; // Employee Name
     String empID; // Employee ID
     int exp; // Employee's year of experience in company
 
-    static int counter=0; // Initializing a counter to count the number of times an object is created
-    
+    static int counter = 0; // Initializing a counter to count the number of times an object is created
+
     ObjCountClass() { // No argument/Default constructor
 
         counter++;
@@ -25,7 +25,7 @@ public final class ObjCountClass {
         System.out.println("\nInvalid inputs, please provide details");
         System.out.println("***********************************");
     }
-    
+
     ObjCountClass(String name) { // Parametrized Constructor (single argument)
 
         this.name = name; // this.name refers to the argument passed through object e2
@@ -35,7 +35,7 @@ public final class ObjCountClass {
         System.out.println("\nNot enough details! Please also provide employee ID and years of experience.");
         System.out.println("***********************************");
     }
-    
+
     ObjCountClass(String name, String empID) { // Parametrized Constructor (double arguments)
 
         this.name = name;
@@ -45,7 +45,7 @@ public final class ObjCountClass {
         System.out.println("\nNot enough details! Please also provide years of experience.");
         System.out.println("***********************************");
     }
-    
+
     ObjCountClass(String name, String empID, int exp) { // Parametrized Constructor (triple arguments)
 
         this.name = name;
@@ -56,28 +56,29 @@ public final class ObjCountClass {
         System.out.println("\nDetails are valid.");
         System.out.println("***********************************");
     }
-    
+
     ObjCountClass(ObjCountClass obj) { // Parametrized Constructor (single object argument)
 
         counter++;
 
         System.out.println("\nSuccessfully input details");
-        System.out.println("***********************************"); 
+        System.out.println("***********************************");
     }
-    
+
     ObjCountClass(boolean choice) { // Parametrized Constructor which accepts a boolean argument
 
         counter++;
 
-        System.out.println("\nThe count of objects created in this program are: "+counter);
-        System.out.println("***********************************"); 
+        System.out.println("\nThe count of objects created in this program are: " + counter);
+        System.out.println("***********************************");
     }
 
-    private void endCount(ObjCountClass obj1, ObjCountClass obj2, ObjCountClass obj3, ObjCountClass obj4, ObjCountClass obj5, ObjCountClass obj6) {
+    private void endCount(ObjCountClass obj1, ObjCountClass obj2, ObjCountClass obj3, ObjCountClass obj4,
+            ObjCountClass obj5, ObjCountClass obj6) {
         // Function/Method which accepts multiple objects as arguments
         System.out.println("\nThank you. Exiting....");
-        System.out.println("***********************************\n"); 
-    } 
+        System.out.println("***********************************\n");
+    }
 
     public static void main(String[] args) {
 
@@ -96,6 +97,6 @@ public final class ObjCountClass {
 
         ObjCountClass e6 = new ObjCountClass(true);
 
-        e6.endCount(e1,e2,e3,e4,e5,e6);
+        e6.endCount(e1, e2, e3, e4, e5, e6);
     }
 }
