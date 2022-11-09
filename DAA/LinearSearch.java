@@ -16,6 +16,8 @@ public class LinearSearch {
     private static void searchOp(int[] arr, int ele) {
         // Function/Method to perform a Linear Search operation
 
+        String spacingLine = "*****************************";
+
         boolean flag = false; // initializing flag to 'false'
 
         for (int pos = 0; pos < arr.length; pos++) {
@@ -23,7 +25,7 @@ public class LinearSearch {
 
             if (arr[pos] == ele) { // Comparing each array element with the element to be found
                 flag = true; // flag is assigned 'true' if element is found
-                System.out.println("The element " + ele + " was found at " + pos + "!");
+                System.out.println("The element " + ele + " was found at the index" + pos + "!");
                 // printing indices at which the element was found
             }
         }
@@ -32,12 +34,15 @@ public class LinearSearch {
             System.out.println("The element " + ele + " was not found! Possible invalid input.");
         }
 
-        System.out.println("*************************\n");
+        System.out.println(spacingLine);
+        
     }
 
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
+
+        String spacingLine = "*****************************";
 
         System.out.println("\nEnter the size of the array to be inputted:");
         int size = scan.nextInt();
@@ -54,9 +59,9 @@ public class LinearSearch {
         System.out.println("\nEnter the element to be searched:");
         int element = scan.nextInt();
 
-        System.out.println("\n*************************");
+        System.out.println("\n" + spacingLine);
         System.out.println("Performing Linear Search!");
-        System.out.println("**************************");
+        System.out.println(spacingLine);
 
         searchOp(array, element);
 
