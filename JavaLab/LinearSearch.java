@@ -29,7 +29,7 @@ public class LinearSearch {
 
             if (arr[pos] == ele) { // Comparing each array element with the element to be found
                 flag = true; // flag is assigned 'true' if element is found
-                System.out.println("The element " + ele + " was found at " + pos + "!");
+                System.out.println("The element " + ele + " was found at index" + pos + "!");
 
                 // printing first index at which the element was found
                 break;
@@ -54,7 +54,7 @@ public class LinearSearch {
 
             if (arr[pos] == ele) { // Comparing each array element with the element to be found
                 flag = true; // flag is assigned 'true' if element is found
-                System.out.println("The element " + ele + " was found at " + pos + "!");
+                System.out.println("The element " + ele + " was found at index" + pos + "!");
                 // printing indices at which the element was found
             }
         }
