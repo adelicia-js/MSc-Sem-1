@@ -2,7 +2,7 @@
                                 BubbleSort.java
             This program implements Bubble Sort on an input array.
                     
-@author Adelicia Sequeira
+@author Adelicia
 @date   09/11/22
 -----------------------------------------------------------------------------*/
 
@@ -25,7 +25,7 @@ public class BubbleSort {
         for (int ind1 = 0; ind1 < arr.length - 1; ind1++) { // Sorting iteration
 
             swapChecker = false;
-            
+
             for (int ind2 = 0; ind2 < arr.length - ind1 - 1; ind2++) { // Swapping iteration
 
                 if (arr[ind2] > arr[ind2 + 1]) {
@@ -52,7 +52,7 @@ public class BubbleSort {
     private static void printResult(int[] arr) {
         // Function/Method to print the sorted array
 
-        System.out.println(Arrays.toString(arr) + "\n");
+        System.out.println(Arrays.toString(arr) + "\n" + "*****************************");
 
     }
 
@@ -77,10 +77,12 @@ public class BubbleSort {
         System.out.println("\n" + spacingLine);
         System.out.println("Performing Bubble Sort now!");
         System.out.println(spacingLine);
-        System.out.println("The sorted array is:");
+        System.out.println("The sorted array is:\n");
 
         printResult(sortOp(array));
 
         scan.close();
+
     }
+
 }

@@ -2,7 +2,7 @@
                                 InsertionSort.java
             This program implements Insertion Sort on an input array.
                     
-@author Adelicia Sequeira
+@author Adelicia
 @date   09/11/22
 -----------------------------------------------------------------------------*/
 
@@ -32,13 +32,14 @@ public class InsertionSort {
             }
             arr[ind2 + 1] = key; // Now, smaller element is the key
         }
+
         return arr; // Returns the sorted array
     }
 
     private static void printResult(int[] arr) {
         // Function/Method to print the sorted array
 
-        System.out.println(Arrays.toString(arr) + "\n");
+        System.out.println(Arrays.toString(arr) + "\n" + "*****************************");
 
     }
 
@@ -63,10 +64,12 @@ public class InsertionSort {
         System.out.println("\n" + spacingLine);
         System.out.println("Performing Insertion Sort now!");
         System.out.println(spacingLine);
-        System.out.println("The sorted array is:");
+        System.out.println("The sorted array is:\n");
 
         printResult(sortOp(array));
 
         scan.close();
+
     }
+    
 }

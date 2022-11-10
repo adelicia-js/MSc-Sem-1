@@ -4,7 +4,7 @@ This program implements Binary Search to search an element from an input array
                     using the Divide and Conquer technique.
                             (Array must be sorted)
                     
-@author Adelicia Sequeira
+@author Adelicia
 @date   05/11/22
 -----------------------------------------------------------------------------*/
 
@@ -80,5 +80,7 @@ public class BinarySearch {
         searchOp(array, element);
 
         scan.close();
+
     }
+    
 }

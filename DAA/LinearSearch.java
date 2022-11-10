@@ -2,7 +2,7 @@
                                 LinearSearch.java
 This program implements Linear Search to search an element from an input array
 
-@author Adelicia Sequeira
+@author Adelicia
 @date   06/11/22
 -----------------------------------------------------------------------------*/
 
@@ -66,5 +66,7 @@ public class LinearSearch {
         searchOp(array, element);
 
         scan.close();
+        
     }
+
 }
