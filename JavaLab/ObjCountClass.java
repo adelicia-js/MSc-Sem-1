@@ -1,4 +1,4 @@
-/* ************************************************************************************************
+/* ------------------------------------------------------------------------------------------------
                                     ObjCountClass.java
 This program counts the number of objects created in a class, and also passes objects as arguments.
 Also implements constructor overloading.
@@ -7,14 +7,14 @@ Also implements constructor overloading.
 
 @author Adelicia
 @date 06/11/22
-*********************************************************************************************** */
+--------------------------------------------------------------------------------------------------*/
 package JavaLab;
 
 public final class ObjCountClass {
 
-    String name = "urmom"; // Employee Name
-    String empID; // Employee ID
-    int exp; // Employee's year of experience in company
+    String name = null; // Employee Name
+    String empID = null; // Employee ID
+    int exp = 0; // Employee's year of experience in company
 
     static int counter = 0; // Initializing a counter to count the number of times an object is created
 

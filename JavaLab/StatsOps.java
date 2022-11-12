@@ -1,11 +1,11 @@
-/* ******************************************************************************************
+/* -------------------------------------------------------------------------------------------
                                     StatsOps.java
 This program calculates the mean, median and mode of the elements of an array
 using Command Line Arguments. 
 
 @author Adelicia
 @date 01/11/22
-******************************************************************************************** */
+-------------------------------------------------------------------------------------------*/
 
 package JavaLab;
 
@@ -38,7 +38,7 @@ public final class StatsOps {
 
         // If the array contains an even number of elements
         if (size % 2 == 0) {
-            median = (arr[size / 2 - 1] + arr[size / 2]) / 2;
+            median = (double) (arr[size / 2 - 1] + arr[size / 2]) / 2;
         }
 
         // If the array contains an odd number of elements
