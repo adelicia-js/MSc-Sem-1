@@ -22,8 +22,8 @@ public class SelectionSort {
 
         for (int ind1 = 0; ind1 < arr.length - 1; ind1++) { // Traversal iteration
 
-            minPos = ind1; // minPos is initialized as the value at index = 0
-
+            minPos = ind1; // minPos is assigned the value at index ind1, every iteration
+            
             for (int ind2 = ind1 + 1; ind2 < arr.length; ind2++) {
                 // Traversing from the index immediately after ind1
 
