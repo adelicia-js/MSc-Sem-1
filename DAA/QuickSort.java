@@ -44,8 +44,8 @@ public class QuickSort {
                             // It is used for comparisons and subsequent swapping when ind1 < ind2
                             // key is initialized as the first element of the array
 
-        int temp1 = 0; // temp used for swapping if ind2 < ind1
-        int temp2 = 0;
+        int temp1 = 0; // temp1 used for swapping if ind2 > ind1
+        int temp2 = 0; // temp2 used for assigning a new key
 
         while (ind1 < ind2) {
             while (arr[ind1] < key && ind1 < high) {
